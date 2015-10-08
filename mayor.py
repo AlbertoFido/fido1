@@ -2,9 +2,9 @@
 #-*- coding: utf-8 -*-
 def mayor(n1, n2):
 	if n1 > n2:
-		 salida = n1
+		 salida = True
 	else:
-		salida = n2 
+		salida = False
 		return salida
 	
 	
