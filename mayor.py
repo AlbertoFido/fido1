@@ -9,14 +9,14 @@ def mayor(numeros):
 		if a > num:
 			num = a	
 	return num
-
-bucle = True
 numeros = []
-while bucle:
+
+contador = 0 
+while contador != 5:
 	a= int(raw_input("Introduce un numero: "))
 	numeros.append(a)
-	if a == 0: 
-		bucle = False 
+	contador = contador + 1 
+	 
 		
 print " el mayor es: ", mayor(numeros) 
 		
