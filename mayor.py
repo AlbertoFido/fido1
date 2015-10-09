@@ -16,7 +16,6 @@ while contador != 5:
 	a= int(raw_input("Introduce un numero: "))
 	numeros.append(a)
 	contador = contador + 1 
-	 
 		
 print " el mayor es: ", mayor(numeros) 
 		
