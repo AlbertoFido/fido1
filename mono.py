@@ -1,6 +1,10 @@
 def count_words(text, words):
-	
-    return 0
+	re=0
+	for ele in words:
+		if ele.upper() in text.upper(): 		
+			re+=1
+			
+	return re
 
 
 
@@ -11,3 +15,4 @@ print count_words("Bananas, give me bananas!!!", {"banana", "bananas"})
 #== 2, "BANANAS!"
 print count_words("Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",{"sum", "hamlet", "infinity", "anything"})
 #== 1, "Weird text"
+#b= set() conjunto vacio
