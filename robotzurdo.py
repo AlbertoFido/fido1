@@ -1,15 +1,18 @@
 def left_join(phrases):
-	li= list(phrases)
-	re=""
+	lis= list(phrases)
+	re=[]
 	contador=0
-	for ele in li:
-		if ele == "right" :
-			li[contador] == "left"
-			re = li
-		contador +=1
-		else:
-			re = "error"
-   
+	for ele in lis:
+		if ele == "right":
+			contador=lis.index(ele)
+			lis[contador]="left"
+			re = lis
+	buscar="right"
+	remplazar="left"
+	cadena=",".join(lis)
+	re =cadena.replace(buscar, remplazar)
+	
+		
 	return re
 
 
