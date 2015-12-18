@@ -4,12 +4,6 @@ def checkio(number):
 	for ele in cad:
 		if ele != "0":
 			resultado *=int(ele)
-		
-			
-			
-			
-			
-	
 
 	return resultado
 

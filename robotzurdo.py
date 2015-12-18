@@ -11,8 +11,6 @@ def left_join(phrases):
 	remplazar="left"
 	cadena=",".join(lis)
 	re =cadena.replace(buscar, remplazar)
-	
-		
 	return re
 
 
