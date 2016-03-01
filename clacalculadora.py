@@ -3,31 +3,31 @@ class calculadora:
 	def __init__(self, op1, op2): 
 		self.a = op1 
 		self.b = op2 
-	def sumar(self): 
+	def sumar(self):
 		s = self.a + self.b 
-		print s 
+		return s 
 	def restar(self): 
 		r = self.a - self.b 
-		print r 
+		return r 
 	def multiplicar(self): 
 		m = self.a * self.b 
-		print m 
+		return m 
 	def dividir(self):
 		d =self.a // self.b
-		print d
+		return d
 	def mayor(self):
 		if self.a > self.b:
-			print self.a, "es mayor que", self.b 
+			return self.a, "es mayor que", self.b 
 		elif self.a < self.b:
-			print self.b, "es mayor que", self.a
+			return self.b, "es mayor que", self.a
 		else:
-			print self.a, "y", self.b, "son iguales"
+			return self.a, "y", self.b, "son iguales"
 	def oorr(self):
 		o=self.a or self.b
-		print o
+		return o
 	def aann(self):
 		a=self.a and self.b
-		print a
+		return a
 
 
 bo = True
@@ -35,21 +35,21 @@ operacion = calculadora (int (raw_input ("introduce un numero:")), int (raw_inpu
 while bo == True:
 	opera= raw_input("indica operacion(+, -, *, /, M para comparar o B para operar en binario), pulsa 'c' para salir o 'r' para resetear : ")
 	if opera == "+":
-		operacion.sumar()
+		print operacion.sumar()
 	elif opera == "-":
-		operacion.restar()
+		print operacion.restar()
 	elif opera == "*":
-		operacion.multiplicar()
+		print operacion.multiplicar()
 	elif opera == "/":
-		operacion.dividir()
+		print operacion.dividir()
 	elif opera == "m":
-		operacion.mayor()
+		print operacion.mayor()
 	elif opera == "b":
 		operab=raw_input("Indica operacion (or, and)")
 		if operab == "or":
-			operacion.oorr()
+			print operacion.oorr()
 		elif operab == "and":
-			operacion.aann()
+			print operacion.aann()
 		else:
 			print "error de operacion"
 	elif opera == "c":
